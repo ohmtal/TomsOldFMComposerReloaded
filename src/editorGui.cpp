@@ -117,14 +117,11 @@ void EditorGui::ShowMenuBar()
 
         if (ImGui::BeginMenu("Window"))
         {
-            ImGui::MenuItem("IMGui Demo", NULL, &mEditorSettings.mShowDemo);
-            ImGui::Separator();
-            ImGui::MenuItem("Sound Effects Generator", NULL, &mEditorSettings.mShowSFXEditor);
-            ImGui::Separator();
             ImGui::MenuItem("FM Composer", NULL, &mEditorSettings.mShowFMComposer);
             ImGui::MenuItem("FM Instrument Editor", NULL, &mEditorSettings.mShowFMInstrumentEditor);
             // ImGui::MenuItem("FM Full Scale", NULL, &mEditorSettings.mShowCompleteScale);
-
+            ImGui::Separator();
+            ImGui::MenuItem("Sound Effects Generator", NULL, &mEditorSettings.mShowSFXEditor);
 
             ImGui::EndMenu();
         }
@@ -163,12 +160,6 @@ void EditorGui::DrawGui()
     mGuiGlue->DrawBegin();
     ShowMenuBar();
 
-
-    if ( mEditorSettings.mShowDemo )
-    {
-        // ImGui::SetNextWindowDockID(mGuiGlue->getDockSpaceId(), ImGuiCond_FirstUseEver);
-        ImGui::ShowDemoWindow();
-    }
 
 
     if ( mEditorSettings.mShowFMComposer ) {

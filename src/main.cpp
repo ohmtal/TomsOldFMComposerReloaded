@@ -17,8 +17,8 @@ int main(int argc, char* argv[])
 {
     (void)argc; (void)argv;
     FluxEditorMain* game = new FluxEditorMain();
-    game->mSettings.Company = "Ohmflux";
-    game->mSettings.Caption = "Flux Editor";
+    game->mSettings.Company = "Ohmtal";
+    game->mSettings.Caption = "Tom's Composer 2.0 (2025)";
     game->mSettings.enableLogFile = true;
     game->mSettings.WindowMaximized = true;
     // game->mSettings.ScreenWidth  = 1920;

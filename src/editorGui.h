@@ -30,7 +30,6 @@ public:
     // a.) mDefaultEditorSettings
     // b.) on the bottom to the json macro!!! 
     struct EditorSettings {
-        bool mShowDemo;
         bool mShowSFXEditor;
         bool mShowFMInstrumentEditor;
         bool mShowFMComposer;
@@ -49,7 +48,6 @@ private:
 
     EditorSettings mEditorSettings;
     EditorSettings mDefaultEditorSettings = {
-        .mShowDemo = false,
         .mShowSFXEditor = true,
         .mShowFMInstrumentEditor = true,
         .mShowFMComposer = true,
@@ -73,7 +71,6 @@ public:
 
 // macro for JSON support
 NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE_WITH_DEFAULT(EditorGui::EditorSettings,
-    mShowDemo,
     mShowSFXEditor,
     mShowFMInstrumentEditor,
     mShowFMComposer,
