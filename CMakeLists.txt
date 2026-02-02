@@ -34,7 +34,7 @@ set(COMP_SOURCES
 )
 
 
-configure_project_target(Composer  "${CMAKE_CURRENT_SOURCE_DIR}/" "assets/" "${COMP_SOURCES}")
+configure_project_target(Composer  "${CMAKE_CURRENT_SOURCE_DIR}/" "${CMAKE_CURRENT_SOURCE_DIR}/assets@assets" "${COMP_SOURCES}")
 
 target_include_directories(Composer PRIVATE
     $<BUILD_INTERFACE:${OPL_DIR}>
