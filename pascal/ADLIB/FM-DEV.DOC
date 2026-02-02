@@ -1,0 +1,68 @@
+     Auflistung der Tîne nach Bezifferung .
+     ======================================
+
+     Oktave  ∫C   ≥Cis ≥D   ≥Dis ≥E   ≥F   ≥Fis ≥G   ≥Gis ≥A   ≥Ais ≥H    ≥
+     --------∫----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥-----≥
+        I    ∫ // ≥  7 ≥  1 ≥  8 ≥  2 ≥  3 ≥  9 ≥  4 ≥ 10 ≥  5 ≥ 11 ≥  6  ≥
+     --------∫----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥-----≥
+       II    ∫ 12 ≥ 19 ≥ 13 ≥ 20 ≥ 14 ≥ 15 ≥ 21 ≥ 16 ≥ 22 ≥ 17 ≥ 23 ≥ 18  ≥
+     --------∫----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥-----≥
+      III    ∫ 24 ≥ 31 ≥ 25 ≥ 32 ≥ 26 ≥ 27 ≥ 33 ≥ 28 ≥ 34 ≥ 29 ≥ 35 ≥ 30  ≥
+     --------∫----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥-----≥
+       IV    ∫ 36 ≥ 43 ≥ 37 ≥ 44 ≥ 38 ≥ 39 ≥ 45 ≥ 40 ≥ 46 ≥ 41 ≥ 47 ≥ 42  ≥
+     --------∫----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥-----≥
+        V    ∫ 48 ≥ 55 ≥ 49 ≥ 56 ≥ 50 ≥ 51 ≥ 57 ≥ 52 ≥ 58 ≥ 53 ≥ 59 ≥ 54  ≥
+     --------∫----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥-----≥
+        VI   ∫ 60 ≥ 67 ≥ 61 ≥ 68 ≥ 62 ≥ 63 ≥ 69 ≥ 64 ≥ 70 ≥ 65 ≥ 71 ≥ 66  ≥
+     --------∫----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥-----≥
+        VII  ∫ 72 ≥ 79 ≥ 73 ≥ 80 ≥ 74 ≥ 75 ≥ 81 ≥ 76 ≥ 82 ≥ 77 ≥ 83 ≥ 78  ≥
+     --------∫----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥----≥-----≥
+        VIII ∫ 84 ≥ // ≥ // ≥ // ≥ // ≥ // ≥ // ≥ // ≥ // ≥ // ≥ // ≥ //  ≥
+
+
+		FUNKTIONEN und PROCEDUREN
+                *************************
+
+FMDetect:boolean
+	Erkennt ob ein komatibler FM Musik Chip vorhanden ist und liefert
+        TRUE wenn das der Fall ist und FALSE wenn nicht.
+
+RESET_FM;
+	Setzt den FM Musik Chip zurÅck. Dieses wird unbedingt empfohlen
+        am Ende des Programms und falls FMDetect nicht aufgerufen wird
+        auch am Anfang des Programms.
+
+LOADINS(Dateiname:string;Channel:byte):boolean;
+	EINGABE : Dateiname= Instumentendatei (.FMI)
+        	  Channel  = Kanal auf den das Instument geladen werden
+		             soll.
+	AUSGABE : TRUE wenn das laden erfolgreich war und FALSE wenn nicht.
+
+PlayFM(TON:INTEGER;CHANNEL:BYTE);
+	EINGABE : TON = Siehe Tontabelle es wird jedoch nicht die Plausibeli-
+        		tÑt ÅberprÅft. BEI -1 wird die Ausgabe gestoppt.
+        	  Channel = Kanal auf dem der Ton ausgegeben werden soll
+                  	    zuvor mu· ein Instrument in den Kanal geladen
+                            werden.
+        AUSGABE : Ton Åber Soundkarte
+
+PlayTon(TON:INTEGER;CHANNEL:BYTE);
+	Wie PlayFM jedoch wird der Ton beim neuaufruf nicht zurÅckgesetzt.
+
+
+
+FMSound(freq,oktave,channel:byte);
+	EINGABE : Freq    = Frequenz des Tons
+                  Oktave  = Oktave des Tons
+		  Channel = Ausgabekanal
+        AUSGABE : Ton Åber Soundkarte
+
+FMNoSound(channel:byte);
+        EINGABE : Channel = Kanal auf dem die Tonausgabe beendet werden soll.
+        AUSGABE : Ton abschalten
+
+
+
+
+
+
