@@ -39,3 +39,4 @@ cmake --build build --config Release
 - The composer itself if feature complete. Goal was to implement a FMTPU compatible play/composer. 
 - The File Browser will be become better since i'll work on it on OhmFlux Engine. 
 - As an goodie it also includes a sfx generator ;)
+- The OPLController was part of my OhmFlux Engine. But I'am working on the new version with OPL3 Support. 
