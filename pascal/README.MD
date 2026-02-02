@@ -10,4 +10,4 @@ The includes/FMTPU.PAS file only uses DOS so not problem to use it ;)
 
 ![COMPOSER](Screenshot_COMPOSER.png)
 
-![COMPOSER](Screenshot_INSGEN.png)
+![INSGEN](Screenshot_INSGEN.png)
