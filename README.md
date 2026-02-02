@@ -1,6 +1,6 @@
 # TomsOldFMComposerReloaded
 
-I started the editor to edit various objects. Currently it's my sound editor for sound effects and my own frequency modulation format (from the 90s)
+It's a sound editor for sound effects and my own frequency modulation format [.fmi, .fms] (from the 90s)
 
 ---
 
