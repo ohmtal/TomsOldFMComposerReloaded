@@ -213,7 +213,7 @@ public:
         if (!mSFXGenerator)
             return;
 
-        SFXParams& lParams = mSFXGenerator->mParams;
+        SFXGenerator::SFXParams& lParams = mSFXGenerator->mParams;
         SFXGenerator* lSfxGen = mSFXGenerator;
 
         // Persistent state for the Auto Play toggle

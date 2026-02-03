@@ -1,6 +1,8 @@
 # TomsOldFMComposerReloaded
 
-It's a sound editor for sound effects and my own frequency modulation format [.fmi, .fms] (from the 90s)
+A easy to use OPL chip song composer. Using my file format [.fmi, .fms] from the 90s.
+
+Each of the 9 channels are linked to a instrument. Simply add the notes and set the speed and song length. Thats it. 
 
 ---
 
