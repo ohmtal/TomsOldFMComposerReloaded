@@ -10,7 +10,7 @@ Each of the 9 channels are linked to a instrument. Simply add the notes and set 
 
 ---
 
-## 📎 Libraries using OhmFlux Engine
+## 📎 Libraries used by the OhmFlux Engine
 - OpenGL
 - Glew
 - SDL3
@@ -18,7 +18,8 @@ Each of the 9 channels are linked to a instrument. Simply add the notes and set 
 - Box2D
 - nlohmann json 
 - stb
-- ymdm
+- ymfm
+
 
 ---
 
