@@ -278,8 +278,8 @@ void EditorGui::InitDockSpace()
     dock_id_right = ImGui::DockBuilderSplitNode(dock_main_id, ImGuiDir_Right, 0.172f, nullptr, &dock_id_central);
 
     // Dock the Windows to these IDs
+    ImGui::DockBuilderDockWindow("File Browser##FileBrowser", dock_id_left);
     ImGui::DockBuilderDockWindow("FM Instrument Editor", dock_id_left);
-    ImGui::DockBuilderDockWindow("File Browser", dock_id_right);
     ImGui::DockBuilderDockWindow("Sound Effects Generator", dock_id_central);
     ImGui::DockBuilderDockWindow("FM Song Composer", dock_id_central);
 
