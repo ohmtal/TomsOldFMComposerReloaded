@@ -17,7 +17,7 @@ include(FetchContent)
 FetchContent_Declare(
     ohmFlux
     GIT_REPOSITORY https://github.com/ohmtal/OhmFlux
-    GIT_TAG        0.260209
+    GIT_TAG        26-04-02.2
 )
 
 # This command downloads the code and automatically calls add_subdirectory
