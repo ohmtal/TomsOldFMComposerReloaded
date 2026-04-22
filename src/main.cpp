@@ -15,6 +15,11 @@ FluxEditorMain* getGame() {
 
 int main(int argc, char* argv[])
 {
+
+    // IMPORTANT !!
+    if (isAndroidBuild()) SDL_SetHint(SDL_HINT_AUDIO_DEVICE_SAMPLE_FRAMES, "2048");
+    else SDL_SetHint(SDL_HINT_AUDIO_DEVICE_SAMPLE_FRAMES, /*"8192"*/ /*"2048" */ "4096");
+
     (void)argc; (void)argv;
     FluxEditorMain* game = new FluxEditorMain();
     game->mSettings.Company = "Ohmtal";
